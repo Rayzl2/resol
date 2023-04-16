@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="keywords" content="самообслуживание, кассы самообслуживания, киоски самообслуживания, кассовый софт, кассовое ПО, по для касс самообслуживания, эффективность самообслуживания">
+	<meta name="description" content="Самообслуживание – это новая тенденция в ритейле, которая позволяет клиентам сами проводить оплату товаров и услуг. Вместо того, чтобы использовать кассы с кассирами, клиенты могут использовать кассы самообслуживания, которые обычно находятся рядом с обычными кассами.
+Кассы самообслуживания – это удобное решение для магазинов и других предприятий, которые хотят обеспечить быстрое и эффективное обслуживание своих клиентов. Киоски самообслуживания также становятся все более популярными, поскольку они позволяют клиентам быстро и легко заказывать еду и напитки в кафе и ресторанах.
+Кассовый софт и кассовое ПО от Resol – это основные компоненты любой системы самообслуживания. Они предназначены для управления платежами клиентов и обработки данных о продажах. ПО для касс самообслуживания должно быть надежным и безопасным, чтобы обеспечивать бесперебойную работу касс.
+Преимущества самообслуживания очевидны – оно повышает эффективность работы магазинов и других предприятий, уменьшает очереди и сокращает время обслуживания клиентов. Кроме того, системы самообслуживания могут снизить затраты на персонал и повысить доходы за счет увеличения числа клиентов, которых можно обслужить за тот же период времени.
+Если вы хотите внедрить самообслуживание в свой бизнес, обратитесь к нам в Resol. Мы предоставляем комплексные решения для магазинов и других предприятий, которые хотят улучшить свой сервис и повысить эффективность работы.">
+	
+	<title>{{ data[0].title }}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename= 'css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/preloader.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}" >
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(93078853, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/93078853" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+	<div class="preloader">
+		<div class="preloader__row">
+			<div class="center-block">
+				<div class="logo">
+					<img src="{{ url_for('static', filename= 'img/logo.png') }}" alt="Resol.im | ПО для касс самообслуживания" width="80vw">
+				</div>
+				<div class="loader">
+				  <div class="inner one"></div>
+				  <div class="inner two"></div>
+				  <div class="inner three"></div>
+				</div>
+			</div>
+	  	</div>
+	 </div>
+	<header id="header" class="header">
+
+
+		<div class="navbar" id="navbar">
+			<div class="logo" id="logo">
+				<img src="{{ url_for('static', filename= 'img/logo.png') }}" alt="Resol | ПО для касс самообслуживания"  width="35vw">
+			</div>
+			<div class="right-side" id="right-side">
+				<ul>
+					<li>
+						<a href="#solution" class="solutions-link">
+							наши решения
+						</a>
+					</li>
+					<li>
+						<a href="#history" class="solutions-history">
+							история
+						</a>
+					</li>
+					<li>
+						<a href="#news" class="solutions-news">
+							новости
+						</a>
+					</li>
+					<li>
+						<a href="#footer" class="solutions-contacts">
+							контакты
+						</a>
+					</li>
+					<li>
+						<a href="" class="solutions-vacations">
+							вакансии
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<section class="wrapper">
+		<div class="container" id="container">
+			<div class="center-block">
+			<div class="logo-m" id="logo-m">
+				<img src="{{ url_for('static', filename= 'img/logo.png') }}" alt="Resol | ПО для касс самообслуживания" width="35vw">
+			</div>
+			<div class="burger"></div>
+		</div>
+			<div class="center-block">
+				<h1>{{ data[0].h1 }}</h1>
+				<p>{{ data[0].p }}</p>
+			</div>
+		</div>
+	</section>
+</header>
+	<section class="history" id="history">
+		<div class="container" id="container">
+			<div class="left-block">
+				<h2>история</h2>
+			</div>
+			<div class="stats-flex">
+				<div class="company c">
+					<p>Компания основана в марте</p>
+					<h1>2022 года</h1>
+				</div>
+				<div class="pro-line"></div>
+				<div class="company c">
+					<p>и на момент создания на</p>
+					<h1>100%</h1>
+					<p>состояла из профессионалов разных областей ИТ</p>
+				</div>
+				<div class="pro-line"></div>
+				<div class="company">
+					<p>на протяжении более чем</p>
+					<h1>7 лет</h1>
+					<p>работающих как одна команда.</p>
+				</div>
+
+			</div>
+			<p class="history-p">{{ data[1].p }}</p>
+		</div>
+	</section>
+	<section class="solutions" id="solution">
+		<div class="union">
+		<div class="container" id="container-sol">
+			<div class="left-block">
+				<h2>наши решения</h2>
+				<p>{{ data[2].p }}</p>
+			</div>
+
+			<div class="categories">
+				<div class="line-flex">
+					<div class="line-block l">
+						<p>{{ data[2].block1 }}</p>
+						<img src="{{ url_for('static', filename= 'img/Group 224.png') }}" alt="ПО для касс самообслуживания">
+					</div>
+					<div class="line-block l">
+						<p>{{ data[2].block2 }}</p>
+						<img src="{{ url_for('static', filename= 'img/Group 226.png') }}" alt="Эффективность самообслуживания">
+					</div>
+
+				</div>
+				<div class="line-flex" >
+					<div class="line-block-NEW l">
+						<p>{{ data[2].block3 }}</p>
+						<img src="{{ url_for('static', filename= 'img/Group 225.png') }}" alt="Безопасность самообслуживания">
+					</div>
+					<div class="line-block-NEW l">
+						<p>{{ data[2].block4 }}</p>
+						<img src="{{ url_for('static', filename= 'img/Group 227.png') }}" alt="Модуль Аналитика - содержит кассовый софт">
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section class="choose" id="choose">
+		<div class="container" id="container">
+			<div class="left-block choose-text">
+				<h2>выбирая нас, вы получаете:</h2>
+			</div>
+			<div class="steps">
+				<hr class="step-line">
+				<div class="step onestep">
+					
+					<div class="count-step">
+						<h4>01</h4>
+					</div>
+					<div class="paragraph">
+						<p>Аудит бизнес-процессов, по окончанию которого ритейлер получает прогнозируемый результат и снижение сроков окупаемости.</p>
+					</div>
+				</div>
+				<hr class="step-line">
+				<div class="step twostep">
+					
+					<div class="count-step">
+						<h4>02</h4>
+					</div>
+					<div class="paragraph">
+						<p>Обучение эффективному управлению инструментами автоматизации: структурированное решение задач путем построения полноценной системы. Компетентность и экспертиза команды востребованы на международной арене (каждый без исключения член команды – адепт самообслуживания)</p>
+					</div>
+				</div>
+				<hr class="step-line">
+				<div class="step threestep">
+					
+					<div class="count-step">
+						<h4>03</h4>
+					</div>
+					<div class="paragraph">
+						<p>Модульность решения и современные платформы разработки (как альтернатива сложным устаревшим технологиям), что позволяет:</p>
+					</div>
+				</div>
+				<div class="p-block-flex">
+					<div class="p-part">
+						<p>
+							Моделировать пользовательский опыт, создавая гибкий и интуитивно понятный интерфейс для конечных пользователей
+						</p>
+						<p>
+							Сократить нагрузку на аппаратные мощности при добавлении нового функционала
+						</p>
+					</div>
+					<div class="p-part">
+						<p>
+							Обеспечить мультиплатформенность (Windows, Linux, Android) и независимость от аппаратного обеспечения
+						</p>
+						<p>
+							Оперативно реагировать на изменения условий рынка и обеспечивать высокую скорость внедрения обновлений, что, в свою очередь, повышает привлекательность заказчика для конечного пользователя
+						</p>
+					</div>
+				</div>
+				<hr class="step-line">
+			</div>
+		</div>
+	</section>
+	<section class="clients" id="clients">
+		<div class="container" id="container">
+			<div class="left-block choose-text">
+				<h2>наши клиенты</h2>
+			</div>
+			<div class="client-table">
+				<div class="clients-row row1">
+					<div class="pos top-left">
+						<div class="logo-service">
+							<img src="{{ url_for('static', filename= 'img/client1.png') }}" alt="">
+						</div>
+						<div class="client-desc">
+						    {% if data[4].block1 != '' %}
+							<p>{{ data[4].block1 }}</p>
+							{% else %}
+							<p>Данная ячейка свободна для знакомств :)</p>
+							{% endif %}
+						</div>
+						<div class="more-btn">
+							<a href="#">
+								Подробнее
+							</a>
+							<img src="{{ url_for('static', filename= 'img/Arrow 3.svg') }}" alt="">
+						</div>
+					</div>
+					<div class="pos top-center">
+						<div class="logo-service">
+							<img src="{{ url_for('static', filename= 'img/client2.png') }}" alt="">
+						</div>
+						<div class="client-desc">
+							{% if data[4].block2 != '' %}
+							<p>{{ data[4].block2 }}</p>
+							{% else %}
+							<p>Данная ячейка свободна для знакомств :)</p>
+							{% endif %}
+						</div>
+						<div class="more-btn">
+							<a href="#">
+								Подробнее
+							</a>
+							<img src="{{ url_for('static', filename= 'img/Arrow 3.svg') }}" alt="">
+						</div>
+					</div>
+					<div class="pos top-right">
+						<div class="logo-service">
+							<img src="{{ url_for('static', filename= 'img/client3.png') }}" alt="">
+						</div>
+						<div class="client-desc">
+							{% if data[4].block3 != '' %}
+							<p>{{ data[4].block3 }}</p>
+							{% else %}
+							<p>Данная ячейка свободна для знакомств :)</p>
+							{% endif %}
+						</div>
+						<div class="more-btn">
+							<a href="#">
+								Подробнее
+							</a>
+							<img src="{{ url_for('static', filename= 'img/Arrow 3.svg') }}" alt="">
+						</div>
+					</div>
+				</div>
+				<hr class="table-line">
+				<div class="clients-row row2">
+					<div class="pos top-left">
+						<div class="logo-service">
+							<img src="{{ url_for('static', filename= 'img/client4.png') }}" alt="">
+						</div>
+						<div class="client-desc">
+							{% if data[4].block4 != '' %}
+							<p>{{ data[4].block4 }}</p>
+							{% else %}
+							<p>Данная ячейка свободна для знакомств :)</p>
+							{% endif %}
+						</div>
+						<div class="more-btn">
+							<a href="#">
+								Подробнее
+							</a>
+							<img src="{{ url_for('static', filename= 'img/Arrow 3.svg') }}" alt="">
+						</div>
+					</div>
+					<div class="pos top-center">
+						<div class="logo-service">
+							<img src="{{ url_for('static', filename= 'img/client5.png') }}" alt="">
+						</div>
+						<div class="client-desc">
+							{% if data[4].block5 != '' %}
+							<p>{{ data[4].block5 }}</p>
+							{% else %}
+							<p>Данная ячейка свободна для знакомств :)</p>
+							{% endif %}
+						</div>
+						<div class="more-btn">
+							<a href="#">
+								Подробнее
+							</a>
+							<img src="{{ url_for('static', filename= 'img/Arrow 3.svg') }}" alt="">
+						</div>
+					</div>
+					<div class="pos top-right">
+						<div class="logo-service">
+							<img src="{{ url_for('static', filename= 'img/client6.png') }}" alt="">
+						</div>
+						<div class="client-desc">
+							{% if data[4].block6 != '' %}
+							<p>{{ data[4].block6 }}</p>
+							{% else %}
+							<p>Данная ячейка свободна для знакомств :)</p>
+							{% endif %}
+						</div>
+						<div class="more-btn">
+							<a href="#">
+								Подробнее
+							</a>
+							<img src="{{ url_for('static', filename= 'img/Arrow 3.svg') }}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news" id="news">
+		<div class="container" id="container">
+			<div class="center-block">
+				<h2>новости</h2>
+			</div>
+			<div class="news-flex">	
+			{% if data[3].nt1 != '' %}
+				<div class="news-block">
+					<p>{{ data[3].nc1 }}</p>
+					<h3>{{ data[3].nt1 }}</h3>
+					<h4>{{ data[3].nd1 }}</h4>
+				</div>
+			{% endif %}
+			{% if data[3].nt2 != '' %}
+				<div class="news-block">
+					<p>{{ data[3].nc2 }}</p>
+					<h3>{{ data[3].nt2 }}</h3>
+					<h4>{{ data[3].nd2 }}</h4>
+				</div>
+				{% endif %}
+				{% if data[3].nt3 != '' %}
+				<div class="news-block">
+					<p>{{ data[3].nc3 }}</p>
+					<h3>{{ data[3].nt3 }}</h3>
+					<h4></h4>
+				</div>
+				{% endif %}
+				
+				{% if data[3].nt4 != '' %}
+				<div class="news-block">
+					<p>{{ data[3].nc4 }}</p>
+					<h3>{{ data[3].nt4 }}</h3>
+					<h4>{{ data[3].nd4 }}</h4>
+				</div>
+				
+				{% endif %}
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer" id="footer">
+		<div class="container" id="container">
+			<div class="center-block">
+				<h2>связаться с нами</h2>
+				<p>Москва, ул. Бутлерова, д. 17, БЦ «Нео Гео», офис 3064</p>
+				<div class="phone"><a href="mail:info@resol.im" id="email-link">Info@resol.im</a></div>
+				<div class="phone-text" id="phone-text">
+					<p>8-800-550-35-51</p>
+				</div>
+
+				<a class="open-modal trigger" href="#demo-modal"><div class="button-feedback open-modal" style="color: #fff">
+						Оставить заявку
+					<img src="{{ url_for('static', filename= 'img/Arrow 4.svg') }}" alt="">
+				</div></a>
+				<style>
+				    
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(18, 96, 141, 1);
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    transition: .2s  ease-in-out;
+}
+.close-button:hover {
+    opacity: 0.5;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+input{
+	background: transparent;
+  border: none;
+  width: 90%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  height: 3vh;
+}
+
+.text-field_floating {
+  position: relative;
+}
+.text-field_floating .text-field__input {
+  height: 3.2vh;
+  line-height: 1.25;
+  padding: 1rem 0.75rem;
+}
+.text-field_floating .text-field__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 2rem .75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+  font-size: .9em;
+}
+.text-field_floating .text-field__input::-moz-placeholder {
+  color: transparent;
+}
+.text-field_floating .text-field__input::placeholder {
+  color: transparent;
+}
+.text-field_floating .text-field__input:focus,
+.text-field_floating .text-field__input:not(:placeholder-shown) {
+  color: rgba(255,255,255, 0.8);
+  padding-top: 2rem; 
+  padding-bottom: .625rem;
+}
+.text-field_floating .text-field__input:focus~.text-field__label,
+.text-field_floating .text-field__input:not(:placeholder-shown)~.text-field__label {
+  opacity: .65;
+  transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+}
+
+.modal-content p{
+	font-size:.8em;
+	width: auto;
+	padding-top:1vh;
+}
+
+.btn-feed{
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-feed:hover{
+	opacity: 0.7;
+}
+
+.well{
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+				</style>
+				<!-- modal 1 -->
+				<div class="modal">
+				    <div class="modal-content">
+				        <span class="close-button">×</span>
+				        <h1 style="font-size: 1.5em;padding-top:1.5vh" id="ostav">Оставить заявку</h1>
+				        <div class="well" style="transition: 1s ease-in-out;" id="well">
+							        
+								</div>
+				        <form action="/request" method="POST" id="GFG">
+				        	<div class="text-field text-field_floating">
+							  <input class="text-field__input" type="text" id="email" placeholder="alexander@itchief.ru" name="name" required>
+							  <label class="text-field__label" for="email">Ваше имя</label>
+							</div>
+							<div class="text-field text-field_floating">
+							  <input class="text-field__input" type="text" id="email" placeholder="alexander@itchief.ru" name="message" required>
+							  <label class="text-field__label" for="email">Ваше сообщение</label>
+							</div>
+							<div class="text-field text-field_floating">
+							  <input class="text-field__input" type="email" id="email" placeholder="alexander@itchief.ru" name="email" required>
+							  <label class="text-field__label" for="email">Ваша электронная почта</label>
+							</div>
+							<p>Нажимая на эту кнопку, вы соглашаетесь
+с
+политикой конфиденциальности</p>
+					<a class="open-modal" onclick="okay()"><div class="button-feedback open-modal btn-feed" style="color: #fff">
+											Оставить заявку
+									</div></a>
+				        </form>
+				    </div>
+				</div>
+<!-- /modal 1 -->
+	<div class="copyright">
+				<h3>Все права защищены. Resol 2023</h3>
+			</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/form.js') }}"></script>
+</body>
+<script>
+$('a[href^="#"').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    });
+    return false;
+});
+</script>
+
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 2000);
+  }
+</script>
+
+<script>
+	function SUB(){
+		document.getElementById('GFG').submit();
+	}
+
+</script>
+</html>
