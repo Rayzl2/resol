@@ -6,8 +6,8 @@ import threading
 import telebot
 import smtplib as smtp
 
-bot = telebot.TeleBot('6164055128:AAH2Wt6rMSA8QpXMuRWtWSu-2v792eNG4gw')
-bot_notice = telebot.TeleBot('6082532435:AAGM1fn49L7e82dzEjZHfVu67GUTWx1U5yk')
+bot = telebot.TeleBot('61640')
+bot_notice = telebot.TeleBot('6082532435:Ax1U5yk')
 application = Flask(__name__)
 
 
